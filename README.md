@@ -1,2 +1,2 @@
-# StudyZen
+# Blazern
 Blazern repository
