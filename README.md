@@ -1,2 +1,2 @@
 # StudyZen
-StudyZen repository
+Blazern repository
