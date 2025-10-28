@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #1a1a1a, #222222, #2d2d2d, #282828);
+    background-size: 400% 400%;
+    animation: gradientFlow 15s ease infinite;
+    color: #dedede; 
+  }
+  
+  @keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  h2 {
+    color: white;
+    margin: 20px 0;
+    font-size: 48px;
+  }
+  
+  #intro-text {
+    margin: 30px;
+    color: #dedede;
+  }
+  
+  textarea {
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    background-color: #1a1a1a;
+    color: #dedede;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    resize: vertical;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    background-color: #1a1a1a;
+    border-radius: 2em;
+    padding: 4em 3em;
+    color: #dedede;
+  }
+  
+  .boosts-container {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 1em;
+    text-align: center;
+    color: #dedede;
+    margin-top: 30px;
+  }
+  
+  .cool-line {
+    width: 60%;
+    height: 5px;
+    border-radius: 1em;
+    border: none;
+    margin: 40px auto;
+    background: linear-gradient(to right, #ff2200, #ffcc00); 
+  }
+  
+  #boost-input {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  
+  button {
+    background-color: #f2f2f2;
+    border: none;
+    margin: 20px;
+    border-radius: 2em;
+    padding: 15px 10px;
+    font-size: 15px;
+    color: #333;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+
+   button:hover {
+        transform: scale(0.95);
+        background-color: #e0e0e0;
+        cursor: pointer;
+  }
+  
+  button:active {
+    transform: scale(0.85);
+    background-color: 	#cccccc;
+  }

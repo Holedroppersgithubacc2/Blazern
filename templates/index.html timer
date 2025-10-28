@@ -1,0 +1,36 @@
+<!Doctype html>
+<html lang=""en>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="timerstyle.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 class="title">Pomodorro Timer</h1>
+      <h2 class="Quote 1">"The future depends on what you do today."</h2>
+
+      <hr class="cool-line" />
+      
+      <p class="timer" id="timer">25:00</p>
+
+      <!-- Wrappers like Eminem -->
+
+        <div class="button-wrapper">
+          <button id="start">Start</button>
+          <button id="stop">Stop</button>
+          <button id="reset">Reset</button>
+        </div>
+    </div>
+    
+    
+    <script src="timerscript.js"></script>
+
+  </body>
+  
+  
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <style>
+            body { font-family: sans-serif; text-align: center; Padding: 100px;}
+            #quote { font-family:sans-serif; margin: 20px; }
+
+        </style>
+        <link rel="stylesheet" href="{{ url_for('static', filename='quotestlye.css') }}">
+    </head>
+    <body>
+        <div class="container">
+        <h1>Quote Machine</h1>
+        <hr class="cool-line" />
+        <div id="intro-text">Ever feel stuck, unmotivated, or start doubting yourself? You're not alone. Tap the button for a quote to inspire and remind you to keep going!</div>
+        <div id="quote"> </div>
+        <button class="quoteBtn" onclick="generateQuote()">New Quote</button>
+
+<script>
+const quotes = [
+  "Success is the sum of small efforts, repeated day in and day out. – Robert Collier",
+  "Don’t watch the clock; do what it does. Keep going. – Sam Levenson",
+  "The journey of a thousand miles begins with one step. – Lao Tzu",
+  "The only limit to our realization of tomorrow is our doubts of today. – Franklin D. Roosevelt",
+  "Success is the result of preparation, hard work, and learning from failure. – Colin Powell",
+  "You don’t have to be great to start, but you have to start to be great. – Zig Ziglar",
+  "Tung Tung Tung Tung Tung Tung Tung Tung Sahur – Tung Tung Tung Tung Tung Tung Tung Tung Sahur",
+  "It’s not whether you get knocked down, it’s whether you get up. – Vince Lombardi",
+  "Dream big. Start small. Act now. – Robin Sharma",
+  "The only way to do great work is to love what you do. – Steve Jobs",
+  "Believe you can and you’re halfway there. – Theodore Roosevelt",
+  "你翻译了这个 – Master Rat Man",
+  "👍 – Unknown user",
+  "Success is not how high you have climbed, but how you make a positive difference to the world. – Roy T. Bennett",
+  "Do something today that your future self will thank you for. – Anonymous",
+  "Your only limit is your mind. – Anonymous",
+  "It’s never too late to be what you might have been. – George Eliot",
+  "The key to success is to start before you are ready. – Marie Forleo",
+  "Don’t wait for an opportunity. Create it. – Anonymous",
+  "Your education is a dress rehearsal for a life that is yours to lead. – Nora Ephron",
+  "Success doesn’t come from what you do occasionally, it comes from what you do consistently. – Marie Forleo",
+  "So you see… – Dharr Mann",
+  "Don’t be afraid to give up the good to go for the great. – John D. Rockefeller",
+  "What we fear doing most is usually what we most need to do. – Ralph Waldo Emerson",
+  "Discipline is the bridge between goals and accomplishment. – Jim Rohn",
+  "It does not matter how slowly you go as long as you do not stop. – Confucius",
+  "You will never regret being kind. – Anonymous",
+  "The only impossible journey is the one you never begin. – Tony Robbins",
+  "Work hard in silence, let your success be your noise. – Frank Ocean",
+  "Uhh Uhh Work hard and stuff yeah – Some one that inhabits this Earth",
+  "We may encounter many defeats, but we must not be defeated. – Maya Angelou",
+  "Do one thing every day that scares you. – Eleanor Roosevelt",
+  "A little progress each day adds up to big results. – Satya Nani",
+  "Don’t wait. The time will never be just right. – Napoleon Hill",
+  "Start where you are. Use what you have. Do what you can. – Arthur Ashe",
+  "You’re braver than you believe, stronger than you seem, and smarter than you think. – A.A. Milne (Winnie the Pooh)",
+  "Fall seven times, stand up eight. – Japanese Proverb",
+  "Life is 10% what happens to us and 90% how we react to it. – Charles R. Swindoll",
+  "You will find two fortune cookies this week. – My fortune cookie",
+  "The best way to predict the future is to create it. – Abraham Lincoln",
+  "Never put off until tomorrow what can be done today. – Sensei Wu",
+  "Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the present. – Master Oogway",
+  "Every block placed is progress made; keep building, even when others don't see it yet. – Creeper (Aw, Man)",
+  "Push yourself, because no one else is going to do it for you. – Unknown",
+  "Small steps every day lead to big results. – Unknown",
+  "The harder you work for something, the greater you’ll feel when you achieve it. – Unknown",
+  "Don’t limit your challenges. Challenge your limits. – Jerry Dunn",
+  "You are capable of more than you know. – Glinda, *Wicked*",
+  "Keep going. Everything you need will come to you at the perfect time. – Unknown",
+  "One day or day one. You decide. – Unknown",
+  "When it feels impossible, remember why you started. – Unknown",
+  "Doubt kills more dreams than failure ever will. – Suzy Kassem",
+  "You're not behind. You're just on your own path. – Unknown",
+  "Your future needs you. Your past doesn’t. – Unknown",
+  "You can’t pour from an empty cup. Take care of yourself first. – Unknown",
+  "Some people want it to happen, some wish it would happen, others make it happen. – Michael Jordan",
+  "Progress, not perfection. – Unknown",
+  "You didn’t come this far just to come this far. – Unknown",
+  "Don’t be afraid of failure. This is the way to succeed. – LeBron James",
+  "You have to be able to accept failure to get better. – LeBron James",
+  "I like criticism. It makes you strong. – LeBron James",
+  "I treated it like every day was my last day with a basketball. – LeBron James",
+  "Sometimes in life you have to take a step back to move forward. – LeBron James"
+];
+
+
+
+function generateQuote(){
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    document.getElementById("quote").innerText = quotes [randomIndex];
+
+}
+
+</script>
+<script src="quotescript.js"></script>
+    </body>
+</html>

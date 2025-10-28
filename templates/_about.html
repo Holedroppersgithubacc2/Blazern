@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blazern</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+</head>
+
+<body>
+  <header>
+    <div class="logo_title">
+      <span>B</span><span>L</span><span>A</span><span>Z</span><span>E</span><span>R</span><span>N</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/features">Features</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/login">Login</a></li>
+    </ul>
+
+  </header>
+
+  <section>
+
+    <div class="OuterWrapper">
+      <div class="text-wrapper">
+        <div class="title">
+          <h2>Blazern</h2>
+        </div>
+        <div class="section-underline"></div>
+        
+        <p>A tool built by students to help you stay locked in and overcome procrastination</p>
+          <!--Use the same button css stuff as earlier-->
+          <!--Don't use nav-->
+          <a href="/about" style="display: flex;
+          gap: 10px;
+          flex-wrap: wrap;
+          justify-content: flex-end;"><i class="fas fa-info-circle"></i>About</a>
+          
+      </div>
+      <div class="image-wrapper">
+        <img src="{{ url_for('static', filename='undraw_book-writer_ri5u.png') }}">
+      </div>
+      
+    </div>
+    
+    
+  </section>
+
+  <main>
+    <div class="text-wrapper">
+      <div class="title">
+        <h2>Features</h2>
+      </div>
+      <div class="section-underline"></div>
+      
+      <div class="features">
+        <div class="features-container">
+          <div class="feature-box">
+            <i class="fas fa-bolt"></i>
+            <h3>Fast Performance</h3>
+            <p>Experience lighting-fast load times and smooth performance all around. Allowing you to study without any interuptions.</p>
+          </div>
+          <div class="feature-box">
+            <i class="fas fa-magic"></i>
+            <h3>Easy to use</h3>
+            <p>Designed with full cusomiziation. Our interface is built with simplicity and cleaness in mind, making it accessable for everyone. </p>
+          </div>
+          <div class="feature-box">
+            <i class="fas fa-lock"></i>
+            <h3>Secure</h3>
+            <p>We prioritize your data and privacy fully with strong security protocals, High-Level encryption, ensuring that your data will always be protected</p>
+          </div>
+          <div class="feature-box">
+            <i class="fas fa-check-circle"></i>
+            <h3>Proven Methods</h3>
+            <p>We encoperate techniques and systems backed up by research and professionals designed to help you stay focused and productive.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  <section>
+    <div class="OuterWrapper">
+      <div class="text-wrapper">
+          <div class="title">
+            <h2>Don't take our word for it</h2>
+          </div>
+          <div class="section-underline"></div>
+          
+        
+
+        <div class="user-container">
+          <div class="card">
+            <img class="photo" src="{{ url_for('static', filename='IMG_134.jpg') }}">
+            <h3>Danny Vish</h3>
+            
+            <p>"Very cool"</p>
+            <div class="section-underline"></div>
+          </div>
+
+          <div class="card">
+            <img class="photo" src="{{ url_for('static', filename='100000072.JPG') }}">
+            <h3>Tyler Kircher</h3>
+            
+            <p>"Changed my life"</p>
+            <div class="section-underline"></div>
+          </div>
+          
+          <div class="card">
+            <img class="photo" src="{{ url_for('static', filename='IMG_020.JPG') }}">
+            <h3>Austin Lee</h3>
+            
+            <p>"Got me 6.0 Gpa"</p>
+            <div class="section-underline"></div>
+          </div>
+
+          <div class="card">
+            <img class="photo" src="{{ url_for('static', filename='IMG_199.JPG') }}">
+            <h3>ELijah Cox</h3>
+            
+            <p>"I will be a good boy"</p>
+            <div class="section-underline"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+    
+</main>
+
+
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <div class="socials">
+          <a href="email" target="_blank" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="instagram" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="twitter" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="github" target="_blank" aria-label="Github">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <p>&copy; 2025 Blazern. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script>
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect(); // IS IN VIEW
+    return (
+      rect.top < window.innerHeight &&
+      rect.bottom > 0 &&
+      rect.left < window.innerWidth &&
+      rect.right > 0
+    );
+  }
+
+  function handleScroll() { // WHEN THE PERSON SCROLLS
+    const targets = document.querySelectorAll('.title, .image-wrapper, .text-wrapper');
+    targets.forEach(element => {
+      if (isInViewport(element)) {
+        element.classList.add('slide-in-visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('load', handleScroll);
+
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('clicked'); // Do the stuff
+    });
+  </script>
+</body>
+</html>
+
+
+
+

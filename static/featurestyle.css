@@ -1,0 +1,199 @@
+html, body { 
+  padding: 0;
+  margin: 0;
+}
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+.square:nth-child(odd) {
+    color: #c65306;
+}
+
+.square:nth-child(even) {
+    color: #d69f07;
+}
+
+.background {
+  background: #222222 ;
+  position: fixed;
+  overflow: hidden;
+
+  width: 100%;
+  height: 100%;
+}
+
+.square {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 0%;
+  backface-visibility: hidden;
+  animation: move linear infinite;
+  background: none;
+  border-radius: 50%;
+
+}
+
+.square:nth-child(1) {
+  top: 77%;
+  left: 88%;
+  animation-duration: 40s;
+  animation-delay: -3s;
+  transform-origin: 16vw -2vh;
+  box-shadow: -40vmin 0 3vmin currentColor;
+
+}
+
+.square:nth-child(2) {
+   top: 30%;
+  left: 40%;
+  animation-duration: 60s;
+  animation-delay: -0s;
+  transform-origin: 10vw 12vh;
+  box-shadow: -40vmin 0 3vmin currentColor;
+
+}
+
+.square:nth-child(3) {
+  top: 60%;
+  left: 70%;
+  animation-duration: 45s;
+  animation-delay: -2s;
+  transform-origin: 17vw -5vh;
+  box-shadow: -40vmin 0 3vmin currentColor;
+
+}
+
+.square:nth-child(4) {
+  top: 20%;
+  left: 12%;
+  animation-duration: 30s;
+  animation-delay: 26s;
+  transform-origin: -17vw -5vh;
+  box-shadow: -40vmin 0 3vmin currentColor;
+
+}
+
+.square:nth-child(5) {
+  top: 41%;
+  left: 47%;
+  animation-duration: 43s;
+  animation-delay: -28s;
+  transform-origin: 25vw -3vh;
+  box-shadow: -40vmin 0 3vmin currentColor;
+
+}
+
+.square:nth-child(6) {
+  top: 50%;
+  left: 0%;
+  animation-duration: 32s;
+  animation-delay: -6s;
+  transform-origin: 1vw -23vh;
+  box-shadow: -40vmin 0 3vmin currentColor;
+
+}
+
+.square:nth-child(7) {
+  top: 22%;
+  left: 17%;
+  animation-duration: 55s;
+  animation-delay: -6s;
+  transform-origin: 1vw -23vh;
+  box-shadow: -40vmin 0 3vmin currentColor;
+
+}
+
+.square:nth-child(8) {
+  top: 60%;
+  left: 45%;
+  animation-duration: 70s;
+  animation-delay: -18s;
+  transform-origin: 32vw -5vh;
+  box-shadow: -40vmin 0 3vmin currentColor;
+
+}
+
+.container{
+  background: #1a1a1a;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  width: 350px;
+  height: 500px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  
+  position: fixed; /* independent of body layout */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* center exactly */
+
+}
+
+.feature {
+  background: #141414;
+  padding: 20px;
+  font-family: 'Fira Code', monospace;
+  color: white;
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  
+}
+
+.feature {
+  position: relative;      /* scope the pseudo-element to this box */
+  overflow: hidden;        /* clip the animated bar to rounded corners */
+  background: #141414;
+  color: #fff;
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+
+.feature::after {
+  content: "";
+  position: absolute;
+  inset: 0;                
+  transform-origin: left center;
+  transform: scaleX(0);    
+  background: #ff5100;
+  z-index: 0;              
+  transition: transform .28s cubic-bezier(.2,.9,.2,1);
+  pointer-events: none;
+}
+
+
+.feature > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+.feature:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(255,81,0,0.25);
+}
+.feature:hover::after {
+  transform: scaleX(1);
+}
