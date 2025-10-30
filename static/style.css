@@ -7,7 +7,6 @@ html, body { /* Gets rid of like weird border */
 header { /* Title bar */
   display: flex;
   align-items: center; /* or 'center', or 'baseline' */
-  justify-content: space-between;
   padding: 10px 50px;
 }
 
@@ -63,7 +62,7 @@ body {
 
 /* container */
 .nav-links {
-  list-style:none;
+  list-style: none;
   display: flex;
   gap: 3rem;
 }
