@@ -61,6 +61,7 @@ body {
     display: flex;
     align-items: center;
     gap: 30px;
+    margin-left: auto;
 }
 
 /* container */
@@ -399,11 +400,3 @@ footer p {
   font-family: 'Fira Code', monospace;
   padding-bottom: auto;
 }
-
-  @media (max-width: 900px) {
-    header{
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
-    }
-  }
