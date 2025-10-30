@@ -62,9 +62,6 @@ body {
   list-style:none;
   display: flex;
   gap: 3rem;
-  display: flex;
-  margin: 0;
-  padding: 0;
 }
 
 .nav-links li a { /* Nav link button */
