@@ -25,6 +25,14 @@ def Features():
 def timer():
     return render_template('timer.html')
 
+@app.route('/brainstorm')
+def brainstorm():
+    return render_template('brainstorm.html')
+
+@app.route('/quotes')
+def quotes():
+    return render_template('quotes.html')
+
 
 @app.errorhandler(404) # IF URL IS NOT VALID
 
