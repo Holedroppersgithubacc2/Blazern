@@ -335,6 +335,7 @@ main {
   filter: grayscale(100%);
   margin-top: -10px;
   transition: transform 0.3s ease, filter 0.3s ease;
+  margin-left: -10px;
 }
 
 .card img:hover {
@@ -396,3 +397,4 @@ footer p {
   font-family: 'Fira Code', monospace;
   padding-bottom: auto;
 }
+
