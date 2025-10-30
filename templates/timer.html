@@ -1,5 +1,5 @@
 <!Doctype html>
-<html lang=""en>
+<html lang="en">
   <head>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
@@ -7,12 +7,14 @@
     content="width=device-width, initial-scale=1.0">
     <title>Pomodoro Timer</title>
     <link rel="stylesheet" href="timerstyle.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='timerstyle.css') }}"> 
+    <script src="{{ url_for('static', filename='timerscript.js') }}"></script>
   </head>
   <body>
 
     <div class="container">
          <a href="{{ url_for('home') }}" class="home-button" aria-label="Home">←</a>
-      <h1 class="title">Pomodorro Timer</h1>
+      <h1 class="title">Pomodoro Timer</h1>
       <h2 class="Quote 1">"The future depends on what you do today."</h2>
 
       <hr class="cool-line" />
