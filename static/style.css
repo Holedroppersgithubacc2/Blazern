@@ -52,6 +52,10 @@ header { /* Title bar */
     }
 }
 
+.logo_image img {
+    height: 50px;
+    width: auto;
+}
 
 body {
   background: #222222 ;
