@@ -1,0 +1,23 @@
+.resource-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.resource-list li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15 px;
+    border-radius: 5px;
+    background: #141414;
+    display: block;
+    transition: 0.2s ease;
+}
+
+.resource-list li a:hover{
+    background: #ff5100;
+    color: white;
+} 
