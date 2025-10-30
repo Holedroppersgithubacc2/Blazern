@@ -11,6 +11,9 @@
   <body>
 
     <div class="container">
+          <a href="{{ url_for('home') }}" class="home-button" aria-label=""Home>←<a></a>
+        
+          </a>
       <h1 class="title">Pomodorro Timer</h1>
       <h2 class="Quote 1">"The future depends on what you do today."</h2>
 
@@ -18,15 +21,12 @@
       
       <p class="timer" id="timer">25:00</p>
 
-      <!-- Wrappers like Eminem -->
-
         <div class="button-wrapper">
           <button id="start">Start</button>
           <button id="stop">Stop</button>
           <button id="reset">Reset</button>
         </div>
     </div>
-    
     
     <script src="timerscript.js"></script>
 
