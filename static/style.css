@@ -57,18 +57,14 @@ body {
   background: #222222 ;
 }
 
-.nav-right {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin-left: auto;
-}
-
 /* container */
 .nav-links {
   list-style:none;
   display: flex;
   gap: 3rem;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li a { /* Nav link button */
@@ -240,14 +236,13 @@ main {
   transform: translateY(0);
 }
 
-
-
 .features-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   padding-top: 50px;
+  margin-bottom: 100px;
 }
 
 .feature-box {
@@ -323,6 +318,7 @@ main {
   margin: 10px;
   font-family: 'Fira Code', monospace;
   margin-bottom: 0px;
+  text-align: 100%;
 }
 
 .card p {
