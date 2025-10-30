@@ -87,7 +87,7 @@ body {
     max-width: 800px;
 }
   
-.title {
+.title, h1 {
     font-size: 3em;
     color: white;
 }
