@@ -34,7 +34,7 @@ def quotes():
     return render_template('quotes.html')
 
 @app.route('/resources')
-def quotes():
+def resources():
     return render_template('resources.html')
 
 
@@ -47,6 +47,7 @@ def page_not_found(e):
 if __name__ == '__main__':
 
     app.run(debug=True)
+
 
 
 
