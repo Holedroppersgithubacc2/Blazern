@@ -4,15 +4,16 @@
 
 ## Features
 
-- **Study Timer** - Stay on track with a dedicated timer
-- **Background noise** - Choose calming noises to help you focus
+- **Pomodoro Study Timer** - Stay on track with a dedicated timer
+- **Resource Guide** - Choose from a list of helpful resources to learn from
+- **Quick Journal** - Jot down your thoughts to help brainstorm
+- **Quote Generator** - Have a laugh and learn some wise advice at the same time
 - **Clean and minimal web design** - Distraction-free, easy to use
-- **Easy to customize** - Modify to fit your workflow
-- **Easy to login/register**
+
 
 ## Contact
 
-You can contact us at support@Blazern.io
+You can contact us at contact@Blazern.com
 
 ## Getting started
 
@@ -29,3 +30,4 @@ Nextly, the database used is SQL so make sure you got a local database **NOT** u
 ---
 
 © 2025 Blazern. All rights reserved.
+
