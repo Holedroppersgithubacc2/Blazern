@@ -177,6 +177,7 @@ html, body {
     justify-content:center;
     width: 100%;
     height: 100%;
+    align-items: center;
 }
 
 
@@ -206,3 +207,4 @@ html, body {
 .feature:hover::after {
   transform: scaleX(1);
 }
+
