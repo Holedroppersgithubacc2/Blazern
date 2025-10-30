@@ -19,7 +19,12 @@ def about():
 
 @app.route('/features')
 def Features():
-    return render_template('features.html')  # LOGIN PAGE
+    return render_template('features.html')  # FEATURES PAGE
+
+@app.route('/timer')
+def timer():
+    return render_template('timer.html')
+
 
 @app.errorhandler(404) # IF URL IS NOT VALID
 
@@ -30,6 +35,7 @@ def page_not_found(e):
 if __name__ == '__main__':
 
     app.run(debug=True)
+
 
 
 
