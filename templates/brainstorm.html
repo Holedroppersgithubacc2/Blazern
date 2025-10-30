@@ -1,195 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Blazern</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
-</head>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <style>
+            body { font-family: sans-serif; text-align: center; Padding: 100px;}
+        </style>
+        <link rel="stylesheet" href="{{ url_for('static', filename='brainstorm.css') }}"> 
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+    </head>
 
-<body>
-  <header>
-    <div class="logo_title">
-      <span>B</span><span>L</span><span>A</span><span>Z</span><span>E</span><span>R</span><span>N</span>
-    </div>
-
-    <ul class="nav-links">
-      <li><a href="/features">Features</a></li>
-      <li><a href="/about">About</a></li>
-    </ul>
-  </header>
-
-  <section>
-
-    <div class="OuterWrapper">
-      <div class="text-wrapper">
-        <div class="title">
-          <h2>Blazern</h2>
-        </div>
-        <div class="section-underline"></div>
-        
-        <p>A tool built by students to help you stay locked in and overcome procrastination</p>
-          <!--Use the same button css stuff as earlier-->
-          <!--Don't use nav-->
-          <a href="/about" style="display: flex;
-          gap: 10px;
-          flex-wrap: wrap;
-          justify-content: flex-end;"><i class="fas fa-info-circle"></i>About</a>
-          
-      </div>
-      <div class="image-wrapper">
-        <img src="{{ url_for('static', filename='undraw_book-writer_ri5u.png') }}">
-      </div>
-      
-    </div>
-    
-    
-  </section>
-
-  <main>
-    <div class="text-wrapper">
-      <div class="title">
-        <h2>Features</h2>
-      </div>
-      <div class="section-underline"></div>
-      
-      <div class="features">
-        <div class="features-container">
-          <div class="feature-box">
-            <i class="fas fa-bolt"></i>
-            <h3>Fast Performance</h3>
-            <p>Experience lighting-fast load times and smooth performance all around. Allowing you to study without any interuptions.</p>
+    <body>
+        <div class="container">
+      <a href="{{ url_for('home') }}" class="home-button" aria-label="Home">←</a>
+        <div class="boosts-containers">
+         <h2>Study Boosts</h2>
+         <hr class="cool-line" />
+         <div id="intro-text">Need a quick reset? Try a 5-minute Study Boost: brain dump your thoughts, set a focused goal, or pause for a mental reset. Simple tools to clear your mind and get back on track.</div> 
+        <div class="boosts-buttons">
+         <div id="boost-input" style="display: none;">
+            <h3 id="boost-title"></h3>
+            <textarea id="boost-text" rows="6" cols="40" placeholder="Start typing here..."></textarea>
           </div>
-          <div class="feature-box">
-            <i class="fas fa-magic"></i>
-            <h3>Easy to use</h3>
-            <p>Our interface is built with simplicity and cleaness in mind, making it accessible for everyone. </p>
-          </div>
-          <div class="feature-box">
-            <i class="fas fa-lock"></i>
-            <h3>Secure</h3>
-            <p>We prioritize your data and privacy fully with strong security protocols, high-level encryption, ensuring that your data will always be protected</p>
-          </div>
-          <div class="feature-box">
-            <i class="fas fa-check-circle"></i>
-            <h3>Proven Methods</h3>
-            <p>We encoperate techniques and systems backed up by research designed to help you stay focused and productive.</p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  <section>
-    <div class="OuterWrapper">
-      <div class="text-wrapper">
-          <div class="title">
-            <h2>Don't take our word for it</h2>
-          </div>
-          <div class="section-underline"></div>
-          
-        
-
-        <div class="user-container">
-          <div class="card">
-            <img class="photo" src="{{ url_for('static', filename='user.png') }}">
-            <h3>D.V.</h3>
-            
-            <p>"Blazern has definitely improved my study habits."</p>
-            <div class="section-underline"></div>
-          </div>
-
-          <div class="card">
-            <img class="photo" src="{{ url_for('static', filename='user.png') }}">
-            <h3>T.K.</h3>
-            
-            <p>"I have bee more productive and organized ever since using Blazern.</p>
-            <div class="section-underline"></div>
-          </div>
-          
-          <div class="card">
-            <img class="photo" src="{{ url_for('static', filename='user.png') }}">
-            <h3>A.L.</h3>
-            
-            <p>"After using Blazern once, I can't stop coming back!"</p>
-            <div class="section-underline"></div>
-          </div>
-
-          <div class="card">
-            <img class="photo" src="{{ url_for('static', filename='user.png') }}">
-            <h3>E.C.</h3>
-            
-            <p>"Using Blazern everyday has helped me stay consistent and focused every day."</p>
-            <div class="section-underline"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-    
-</main>
-
-
-
-  <footer>
-    <div class="footer-content">
-      <div class="footer-links">
-        <div class="socials">
-          <a href="email" target="_blank" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
-          <a href="instagram" target="_blank" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="twitter" target="_blank" aria-label="Twitter">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="github" target="_blank" aria-label="Github">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-      </div>
-      <p>&copy; 2025 Blazern. All rights reserved.</p>
-    </div>
-  </footer>
-
-
-  <script>
-  function isInViewport(element) {
-    const rect = element.getBoundingClientRect(); // IS IN VIEW
-    return (
-      rect.top < window.innerHeight &&
-      rect.bottom > 0 &&
-      rect.left < window.innerWidth &&
-      rect.right > 0
-    );
-  }
-
-  function handleScroll() { // WHEN THE PERSON SCROLLS
-    const targets = document.querySelectorAll('.title, .image-wrapper, .text-wrapper');
-    targets.forEach(element => {
-      if (isInViewport(element)) {
-        element.classList.add('slide-in-visible');
-      }
-    });
-  }
-
-  window.addEventListener('scroll', handleScroll);
-  window.addEventListener('load', handleScroll);
-
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('nav-links');
-
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('clicked'); // Do the stuff
-    });
-  </script>
-</body>
+         <button id="brain" onclick="startBoost('brain')">Brain Dump</button>
+         <button id="goal" onclick="startBoost('goal')">Set a Goal</button>
+         <button id="reset" onclick="startBoost('reset')">Mentel Reset</button>
+</div>
+</div>
+</div>
+        <script src="{{ url_for('static', filename='brainstorm.js') }}"></script>
+    </body>
 </html>
-
-
-
