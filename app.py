@@ -33,6 +33,10 @@ def brainstorm():
 def quotes():
     return render_template('quotes.html')
 
+@app.route('/resources')
+def quotes():
+    return render_template('resources.html')
+
 
 @app.errorhandler(404) # IF URL IS NOT VALID
 
@@ -43,6 +47,7 @@ def page_not_found(e):
 if __name__ == '__main__':
 
     app.run(debug=True)
+
 
 
 
