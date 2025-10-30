@@ -5,7 +5,7 @@
         <style>
             body { font-family: sans-serif; text-align: center; Padding: 100px;}
         </style>
-        <link rel="stylesheet" href="fivestyle.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='timerstyle.css') }}"> 
         <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
     </head>
 
@@ -24,9 +24,9 @@
          <button id="brain" onclick="startBoost('brain')">Brain Dump</button>
          <button id="goal" onclick="startBoost('goal')">Set a Goal</button>
          <button id="reset" onclick="startBoost('reset')">Mentel Reset</button>
- <script src="fivescript.js"></script>
 </div>
- </div>
- </div>
+</div>
+</div>
+        <script src="{{ url_for('static', filename='brainstorm.js') }}"></script>
     </body>
 </html>
