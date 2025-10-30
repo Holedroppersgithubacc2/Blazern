@@ -7,7 +7,7 @@ html, body { /* Gets rid of like weird border */
 header { /* Title bar */
   display: flex;
   align-items: center; /* or 'center', or 'baseline' */
-  padding: 10px 50px;
+  justify-content: center;
 }
 
 .logo_title { /* container for title */
